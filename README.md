@@ -14,3 +14,4 @@ Run `mvn compile` to compile, `mvn test` to test, and `mvn package` to create th
 `java -cp target/maven-java-project-1.0-SNAPSHOT.jar com.careertiq.app.App`
 
 Expected output: `Hello World!`
+Testing automatic Jenkins build
