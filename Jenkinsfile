@@ -1,3 +1,4 @@
+
 pipeline {
     agent any
 
@@ -11,6 +12,12 @@ pipeline {
         stage('Build') {
             steps {
                 sh 'mvn clean compile'
+            }
+        }
+
+        stage('Code Quality - Checkstyle') {
+            steps {
+                sh 'mvn checkstyle:checkstyle'
             }
         }
 
